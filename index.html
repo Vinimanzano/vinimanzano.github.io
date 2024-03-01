@@ -3,165 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./assets/img/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/style.css"/> 
-    <link rel="stylesheet" href="./assets/normalize.css">
-    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="script.js" defer ></script> -->
+    <title>Portfólio</title>
 </head>
 <body>
     <header>
-        <div class="box-degrade">
-        <p>Vinícius Manzano</p></div>
-        <img class="logo" src="./assets/img/logo.png">
-        <div>
-            <div class="mobile-menu">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-              </div>
-              <ul class="nav-list">
-                <a href="#home" class="one">Home</a>
-                <a href="#about-me" class="two">About-me</a>
-                <a href="#skills" class="tree">Skills</a>
-                <a href="#projects" class="four">Projects</a>
-                <a href="#contact" class="five">Contact</a> 
-            <nav class="button">
-                <div class="test">
-            </nav>
-        </div>     
+        <ul>
+            <img src="./assets/logo2.png">
+            <li class="home"><a href="#home"><i class="bi bi-house"></i></a></li>
+            <li><a href="#about"><i class="bi bi-person-badge-fill"></i></a></li>
+            <li><a href="#skills"><i class="bi bi-person-gear"></i></a></li>
+            <li><a href="#projects"><i class="bi bi-code-slash"></i></a></li>
+        </ul>
+
+        <ul>
+            <li><a href="https://github.com/vinimanzano" target="_blank"><i class="bi bi-github"></i></a></li>
+            <li class="refresh"><a href="#home"><i class="bi bi-arrow-clockwise"></i></a></li>
+        </ul>
     </header>
-    <section>
-        <div class="linktree">
-            <div class="code" >
-                <img src="./assets/linktree/QRtiger.png">
+
+    <div>
+        <main>
+          <div class="loader-start"></div>
+
+          <section id="home" class="home-section">            
+            <h2>Vinícius Manzano</h2>
+            <div>
+              <p>28 anos</p>
+              <p>Welcome to my Portfólio</p>
             </div>
-        </div>
-    </section>
-    <section class="home" id="home">
-            <div class="teste">
-                <h1>
-                    I'am Vinícius Manzano
-                </h1>
-                <p>I am a systems analysis and development student</p>
-            </div>
-            <div class="imagem">
-                <div class="foto">
+            <div class="arrow-down"><a href="#about"><i class="bi bi-arrow-down-short"></i></a></div>
+          </section>
+            
+          <section id="about" class="about">
+            <h2>About</h2>
+              <div>    
+                  <p>Systems Analysis and development student at Senai, game player in my free time and every day trying harder to be better! Nice to meet you, this is me.</p>
+              </div>
+              <div class="loader"></div>
+          </section>
+
+          <section id="skills" class="skills">        
+            <h2>Skills</h2>
+              <div>
+                <div class="mySkills">
+                    <p>DEVELOPMENT SKILLS</p>
+                      <ul>
+                        <li>
+                          <h3>HTML</h3>
+                          <span class="barras"><span class="html"></span></span>
+                        </li>
+                        <li>
+                          <h3>CSS</h3>
+                          <span class="barras"><span class="css"></span></span>
+                        </li>
+                        <li>
+                          <h3>JAVASCRIPT</h3>
+                          <span class="barras"><span class="js"></span></span>
+                        </li>
+                        <li>
+                          <h3>C</h3>
+                          <span class="barras"><span class="c"></span></span>
+                        </li>
+                        <li>
+                          <h3>NodeJS</h3>
+                          <span class="barras"><span class="node"></span></span>
+                        </li>
+                        <li>
+                          <h3>Banco de Dados</h3>
+                          <span class="barras"><span class="bd"></span></span>
+                        </li>
+                        <li>
+                          <h3>React</h3>
+                          <span class="barras"><span class="react"></span></span>
+                        </li>
+                      </ul>
                 </div>
-                <div class="social">
-                    <div class="social">
-                        <a href="https://github.com/Vinimanzano"><img src="./assets/img/github.png"></a>
-                        <a href="https://www.linkedin.com/in/vinimanzano/   "><img src="./assets/img/linkedin.png" alt=""></a>
-                        <a href="https://www.instagram.com/vinimanzano/"><img src="./assets/img/insta.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="about-me" id="about-me">
-            <div class="teste1">
-                <h1>About-me:</h1>
-                <p>Systems Analysis and development student at Senai, game player in my free time and every day trying harder to be better! Nice to meet you, this is me.</p>
-                <a href="https://linktr.ee/vinimanzano?utm_source=linktree_admin_share"><img src=""></a>
-            </div>
-    </section>
-    <section class="skills" id="skills">
-            <div class="teste2">
-                <h1>My Skills:</h1>
-                <div id="titulo">
-                    <h2>CÍRCULO PROGRESSIVO</h2>
-            </div>
-                    <br> <br>
-            <div class="container">
-                  <div class="card">
-                  <div class="box">
-                  <div class="percent">
-                    <svg>
-                            <circle cx="70" cy="70" r="70"></circle>
-                            <circle id="circle1" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                  <div class="number">
-                            <h2><b id="percent1">0</b><span>%</span></h2>
-                          </div>
-                        </div>
-                        <h2 class="text">Html</h2>
-                      </div>
-                  </div>
-                  <div class="card">
-                  <div class="box">
-                  <div class="percent">
-                    <svg>
-                      <circle cx="70" cy="70" r="70"></circle>
-                      <circle id="circle2" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                  <div class="number">
-                      <h2><b id="percent2">0</b><span>%</span></h2>
-                  </div>
-                </div>
-                     <h2 class="text">Css</h2>
-                </div>
-                  </div>
-                <div class="card">
-                <div class="box">
-                <div class="percent">
-                    <svg>
-                      <circle cx="70" cy="70" r="70"></circle>
-                      <circle id="circle3" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                <div class="number">
-                        <h2><b id="percent3">0</b><span>%</span></h2>
-                </div>
-                </div>
-                    <h2 class="text">Javascript</h2>
-                </div>
+                <div class="mySkills">
+                  <p>OTHER SKILLS</p>
+                    <ul>
+                      <li>
+                        <h3>EXCEL</h3>
+                        <span class="barras"><span class="excel"></span></span>
+                      </li>
+                      <li>
+                        <h3>POWER BI</h3>
+                        <span class="barras"><span class="power-bi"></span></span>
+                      </li>
+                      <li>
+                        <h3>GOOGLE CLOUD</h3>
+                        <span class="barras"><span class="gc"></span></span>
+                      </li>
+                    </ul>
                 </div>
               </div>
-            </div>
-    </section>
-    <section class="projects" id="projects">
-            <div class="titlePjct">
-                <h1>My Projects:</h1>
-            </div>
-            <div class="projetos">
-                <div class="basicProjct">
-                    <div class="estilo">
-                        <a href="./assets/Loja-Senai/Loja/app/index.html"><img src="./assets/Loja-Senai/Loja/assets/capa.png" class="Prjcts"></a>
-                        <p>This is a basic calculator creation.</p>
-                    </div>
-                </div>
-            <div class="basicProjct">
-                    <div class="estilo" >
-                        <a href="./assets/Curriculum/Vinicius Manzanocv.pdf"><img src="./assets/Curriculum/CV.png" class="Prjcts"></a>
-                        <p>This was work requested by the teacher to create the page, just like the one he did for the grade.</p>
-                    </div>
-                </div>
-                <div class="basicProjct">
-                    <div class="estilo" >
-                        <a href="./assets/Aula 14/index.html"><img src="./assets/Aula 14/img/aula14.png" class="Prjcts"></a>
-                        <p>This is an exercise proposed in the javascript class.</p>
-                    </div>
-                </div>
-            </div>
-    </section>
-    <section class="contact" id="contact">
-            <h1>Contact-me:</h1>
-            <form action="https://formsubmit.co/contato.vinimanzano@gmail.com" method="POST" id="nada">
-                <input class="input" type="text" name="name"  placeholder="Nome" required>
-                <input class="input" type="email" name="email"  placeholder="E-mail" required>
-                <input class="input" type="number" name="number" placeholder="(xx)xxxxx-xxxx" required>
-                <textarea  class="input text" name="mensagem" placeholder="leave your message" required></textarea>
-                <button  class="btnn" type='submit'>Enviar</button>
-                <input type="hidden" name="_subject" value="Novo Contato!">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_captcha" value="false">
+              <div class="loader"></div>
+          </section>
 
-             </form>
-            </form>
-    </section>
-    <footer>
-            <p>Copyright© 2023 by Vinícius Manzano | All Rights Reserved.</p>
-            <a href="#home"><button class="btnTop"></button></a>
-    </footer>
-        
+          <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <div>
+              <a href="./assets/Project01/index.html" target="_blank">
+                 <img src="./assets/jogodavelha.png" alt="">
+              </a>
+              <a href="./assets/Calculadora/index.html" target="_blank">
+                <img src="./assets/Calculadora/img/calculadora.png" alt="">
+                </a>
+              <a href="./assets/cerveja/pagina/index.html" target="_blank">
+                <img src="./assets/cerveja/img/brejaa.png" alt="">
+              </a>
+              <a href="./assets/finder/atvd9.html" target="_blank">
+                <img src="./assets/finder/img/bg.jpeg" alt=""></a>
+              <a href="./assets/Aula 14/index.html">
+                <img src="./assets/Aula 14/img/aula14.png" alt="">
+              </a>
+              <a href="./assets/Vacina/index.html" target="_blank">
+                <img src="./assets/Vacina/assets/img/referencia.png" alt="">
+              </a>
+              <a href="./assets/Loja-Senai/Loja/app/index.html" target="_blank">
+                <img src="./assets/Loja-Senai/Loja/assets/logo.png" alt="">
+              </a>
+              <a href="./assets/portfolio-antigo/index.html" target="_blank">
+                <img src="./assets/portfolio-antigo/assets/img/port-antigo.png" alt="">
+              </a>
+            </div>
+            
+          </section>
+        </main>
+        <footer> 
+          <p>Copyright © 2024 by Vinícius Manzano | All Rights Reserved.</p>
+        </footer>
+    </div>    
 </body>
-<script src="./assets/js.js"></script>
-
-</html> 
+</html>
