@@ -184,7 +184,7 @@ main p{
 }
 
 .home-section p{
-    font-size: 1.5rem;
+    font-size: 2rem;
     transition: .5s;
     color: var(--white);
     text-align: center;
