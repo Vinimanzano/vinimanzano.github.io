@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css"><link>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <script src="./script.js" defer></script>
+    <title>Instituto TI Connection</title>
+</head>
+<body>
+    
+    <header>
+        <img src="./assets/logo1.png">
+        <h1>Instituto TI Connection</h1>
+        <div>
+            <a href="./index.html">Home</a>
+            <a href="./cursos.html">Cursos</a>
+            <a href="./matricula.html">Matrícula</a>
+            <a onclick="switchModal()">Contato</a>
+        </div>
+    </header>
+
+    <dialog>
+        <h1>Contato:</h1>
+        <div class="tudo">
+            <form class="modal">
+                <div>
+                    <label for="name">Nome:</label>
+                    <input id="name" type="text">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input id="email" type="text">
+                </div>
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                </div> 
+                <button type="submit" class="btn-form">Enviar</button>
+            </form>
+        </div>
+        <button class="botaozin" onclick="closeModal()">Fechar</button>
+    </dialog> 
+
+    <main class="index">
+        <div class="container">
+            <a>Desperte seu potencial. <span>Estude conosco!</span></a>
+
+            <h3>Você vai se preparar para os desafios reais do mercado de trabalho com muita prática e apoio contínuo por meio de cursos feitos para o seu momento de vida e objetivos de carreira.</h3>
+            </div>
+        </div>    
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href=""><i class="bi bi-twitter-x"></i></a></li>
+            <li><a href=""><i class="bi bi-facebook"></i></a></li>
+            <li><a href=""><i class="bi bi-instagram"></i></a</li>
+            <li><a href=""><i class="bi bi-whatsapp"></i></a</li>
+        </ul>
+        <p> | Copyright © 2024 by Instituto TI Connection | All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

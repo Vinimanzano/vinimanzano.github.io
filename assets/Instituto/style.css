@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    text-decoration: none;
+    list-style: none;
+}
+
+:root{
+    --black: black;
+    --white: white;
+    --pink: pink;
+    --blue: blue;
+    --gray: gray;
+    --darkgray : darkgray;
+    --40: rgb(40,40,40);
+    --30: rgb(30,30,30);
+    --20: rgb(20,20,20);
+    --10: rgb(10,10,10);
+    --color: rgb(153, 21, 39);
+    --color2: rgb(224, 90, 23);
+    --color3: rgb(235, 125, 70);
+    --color4: rgb(226, 240, 37);
+    --color5: rgb(243, 11, 11);
+
+    --header-font: "Kode Mono", monospace;
+    --base-font: "Merriweather", serif;
+    --logo: "Source Code Pro", monospace;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--black); 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: var(--color2);
+    border-radius: 30px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: var(color2);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+
+    text-decoration: none;
+}
+
+header div a{
+    transition: 0.2s;
+    color: var(--color2);
+}
+
+header div a:hover{
+    color: var(--white);
+    transition: 0.8s;
+}
+
+.title {
+    display: flex;
+    color: #1A1110;
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 48px;
+    font-weight: 700;
+    font-family: var(--header-font);
+    justify-content: center;
+    align-items: center;
+}
+
+.modalBtn {
+    height: 5vh;
+    width: 15vh;
+
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+
+    background-color: var(--20);
+}
+
+.modal .content {
+    background-color: black;
+    margin-left: 20%;
+    padding: 30px;
+    border-radius: 5px;
+    width: 60%;
+    height: 90%; 
+    font-size: 1rem;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0;
+    box-sizing: border-box;
+
+    width: 40%;
+    height: 3vh;
+    margin-bottom: 20px
+}
+
+#message{
+    height: 7vh;
+    width: 75vh;
+    resize: none;
+}
+
+body .btnn{
+    height: 5vh; 
+    width: 20vh;
+
+    border-radius: 5px;
+    border: 0;
+}
+
+header{
+    font-family: var(--header-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: var(--20);
+    color: var(--white);
+}
+
+header img{
+    width: 200px;
+    height: 100px;
+}
+
+header i{
+    font-size: 4rem;
+}
+
+header a{
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: var(--color2);
+}
+
+
+dialog{
+    font-family: var(--base-font);
+    position: relative;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60%;
+    height: 50%;
+
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+
+    text-align: center;
+}
+
+dialog::backdrop{
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    width: 60%;
+    height: 50%;
+    
+}
+
+.tudo form input{
+    width: 300px;
+    height: 50px;
+    border: 2px solid var(--30);
+}
+
+.modal div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.tudo form textarea{
+    resize: none;
+    width: 300px;
+    height: 50px;
+    border: 2px solid var(--30);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+dialog h1{
+    gap: 8px;
+    text-align: center;
+    font-size: 2rem;
+    font-size: var(--header-font);
+}
+
+.botaozin{
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    transform: translate(-50%, -50%);
+
+    font-size: 1rem;
+}
+
+dialog img{
+    width: 25%;
+    height: 60%; 
+    
+}
+
+.btn-modall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--20);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+.btn-form{
+    display: flex;
+    width: 10%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--20);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1.3rem;
+}
+
+
+.container a{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: aqua;
+    font-family: var(--logo-font);
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: inset 3px 0 25px 0px var(--color2);
+}
+.container h3{
+    position: absolute;
+    top: 60%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--color4);
+    color: aquamarine;
+    border-radius: 6px;
+    font-family: var(--header-font);
+
+    border-radius: 30px 0px 30px 0px;
+    box-shadow: inset 3px 0 25px 0px var(--color2);
+}
+.cursos{
+    font-family: var(--base-font);
+    height: 75vh;
+    width: 99.6vw;
+    font-size: 2.2rem;
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    overflow: hidden;
+    align-items: center;
+    background-color: var(--color);
+
+    background-image: url(./assets/info1.jpg);
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+
+    color: var(--black);
+}
+
+.cursosList{
+    font-size: 3rem;
+}
+
+.index{
+    height: 75vh;
+    width: 99.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-image: url(./assets/123.jpg); */
+    background-color: var(--black);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.form{
+    height: 75vh;
+    width: 99.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./assets/formularioo.png);
+}
+
+
+.matricula{
+    height: 75vh;
+    width: 99.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color);
+}
+
+.btn{
+    height: 5vh; 
+    width: 20vh;
+
+    border-radius: 5px;
+    border: 0;
+}
+
+.matricula h1{
+    font-size: 3rem;
+    font-family: var(--header-font);
+    color: var(--color2);
+}
+
+.matricula form h1{
+    display: flex;
+    font-family: var(--header-font);
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color2);
+    margin: 20px;
+}
+
+.matricula form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.matricula form input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    width: 15%;
+    height: 5vh;
+}
+
+footer{
+    font-family: var(--header-font);
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: var(--color2);
+    background-color: var(--30);
+    gap: 30px;
+}
+
+footer ul{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+footer ul :hover{
+    color: var(--white);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+footer p{
+    font-size: 1rem;
+    color: var(--color2);
+}
+
+footer ul li a{
+    color: var(--color2);
+}
+
+.button-html, .button-css, .button-js, .button-react, .button-nodeJS {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--20);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--20);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--color2);
+  }
+  
+  button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--color2);
+    transition: 1.5s;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
