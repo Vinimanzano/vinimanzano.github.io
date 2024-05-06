@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
+    <script src="https://unpkg.com/lenis@1.0.45/dist/lenis.min.js"></script> 
     <script src="script.js" defer ></script>
     <title>Portfólio</title>
 </head>
@@ -25,7 +26,7 @@
         </ul>
     </header>
 
-    <div>
+  <div>
         <main>
           <div class="loader-start"></div>
 
@@ -102,47 +103,48 @@
               </div>
               <div class="loader"></div>
           </section>
-
+        <div class="scroll-container">
           <section id="projects" class="projects">
             <h2>Projects</h2>
             <div>
-              <a href="./assets/Project01/index.html" target="_blank">
-                 <img src="./assets/jogodavelha.png" alt="">
+              <a href="./assets/Project01/index.html" target="_blank" >
+                 <img src="./assets/jogodavelha.png" draggable="false">
               </a>
               <a href="./assets/Calculadora/index.html" target="_blank">
-                <img src="./assets/Calculadora/img/calculadora.png" alt="">
+                <img src="./assets/Calculadora/img/calculadora.png" draggable="false">
                 </a>
               <a href="./assets/cerveja/pagina/index.html" target="_blank">
-                <img src="./assets/cerveja/img/brejaa.png" alt="">
+                <img src="./assets/cerveja/img/brejaa.png" draggable="false">
               </a>
               <a href="./assets/finder/atvd9.html" target="_blank">
-                <img src="./assets/finder/img/finder.png" alt="">
+                <img src="./assets/finder/img/finder.png" draggable="false">
               </a>
               <a href="./assets/Aula 14/index.html" target="_blank">
-                <img src="./assets/img/javascript2.png" alt="">
+                <img src="./assets/img/javascript2.png" draggable="false">
               </a>
               <a href="./assets/Vacina/index.html" target="_blank">
-                <img src="./assets/Vacina/assets/img/new.png" alt="">
+                <img src="./assets/Vacina/assets/img/new.png" draggable="false">
               </a>
               <a href="./assets/Loja-Senai/Loja/app/index.html" target="_blank">
-                <img src="./assets/Loja-Senai/Loja/assets/logo.png" alt="">
+                <img src="./assets/Loja-Senai/Loja/assets/logo.png" draggable="false">
               </a>
               <a href="./assets/portfolio-antigo/index.html" target="_blank">
-                <img src="./assets/portfolio-antigo/assets/img/teste.png" alt="">
+                <img src="./assets/portfolio-antigo/assets/img/teste.png" draggable="false">
               </a>
-              <a href="./assets/Curriculum/Vinicius Manzanocvv.pdf" target="_blank">
-                <img src="./assets/Curriculum/CVV.png" alt="">
+              <a href="./assets/Curriculum/Vinicius Manzanocvv.pdf" target="_blank" draggable="false">
+                <img src="./assets/Curriculum/CVV.png" draggable="false">
               </a>
               <a href="./assets/Instituto/index.html" target="_blank">
-                <img src="./assets/Instituto/assets/project.png" alt="">
+                <img src="./assets/Instituto/assets/project.png" draggable="false">
               </a>
             </div>
-            
+        </div>
           </section>
         </main>
+        
         <footer> 
-          <p>Copyright © 2024 by Vinícius Manzano | All Rights Reserved.</p>
+          <p id="copyright"></p>
         </footer>
-    </div>    
+  </div>    
 </body>
 </html>
