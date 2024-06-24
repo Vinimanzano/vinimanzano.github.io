@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Station</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <img src="./assests/logo.png" alt="">
+    <a class="navbar-brand" href="#">Music Station</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#playlists">Playlists</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="about-link" data-toggle="modal" data-target="#about">Quem somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="request-link" data-toggle="modal" data-target="#request">Peça sua música</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="playlists" class="container mt-5">
+    <h2 class="mb-4">Playlists</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Playlist 1 - Pagode</h3>
+        <ul>
+          <li>Menos é Mais</li>
+          <li>Menos é mais</li>
+          <li>Kamisa 10</li>
+        </ul>
+        <audio controls>
+          <source src="./songs/Pagode/Churrasquinho do Menos é Mais - Melhor eu ir_Ligando os Fatos_Sonho de Amor_Deixa eu te querer.mp3" type="audio/mpeg">
+          <source src="./songs/Pagode/Grupo Menos é Mais - Ficadinha.mp3" type="audio/mpeg">
+          <source src="./songs/Pagode/KAMISA 10.ERA UMA VEZ.AURORA BOREAL. ( SHOW ).ÀS MELHORES MÚSICAS DE SUCESSOS DO SAMBA E PAGODE .IMP.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="col-md-4">
+        <h3>Playlist 2 - Sertanejo</h3>
+        <ul>
+          <li>Chitãozinho e Xororó</li>
+          <li>Luan Pereira</li>
+          <li>Ana Castela</li>
+        </ul>
+        <audio controls>
+          <source src="./songs/Sertanejo/Chitãozinho & Xororó - Galopeira [DVD 50 Anos Ao Vivo no Radio City Music Hall - NY].mp3" type="audio/mpeg">
+          <source src="./songs/Sertanejo/Estrada de Cho.mp3" type="audio/mpeg">
+          <source src="./songs/Sertanejo/RAM TCHUM.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+      <div class="col-md-4">
+        <h3>Playlist 3 - Trap</h3>
+        <ul>
+          <li>Borges </li>
+          <li>MC Daniel</li>
+          <li>Poesia Acústica</li>
+        </ul>
+        <audio controls>
+          <source src="./songs/Trap/Borges - Loucura ft. Cabelinho & Veigh.mp3" type="audio/mpeg">
+          <source src="./songs/Trap/Mc Daniel x Mc Paulin da Capital - Renasci das cinzas - Lyons produções.mp3" type="audio/mpeg">
+          <source src="./songs/Trap/Poesia Acústica #15 - Mc Poze, Luiz Lins, MC Hariel, Azzy, JayA, Oruam,Slipmami, MC Cabelinho,Chefin.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+    </div>
+  </div>
+  
+<div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="aboutModalLabel">Quem somos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Somos uma empresa de musica no segmento de amor e paixao por estilos especificos.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="music-player" class="container mt-5">
+    <audio id="audio-player" src=""></audio>
+    <div class="row">
+      <div class="col-md-2">
+        <button id="prev-btn" class="btn btn-primary"><i class="bi bi-skip-backward-btn-fill"></i></button>
+      </div>
+      <div class="col-md-2">
+        <button id="play-pause-btn" class="btn btn-primary">Play</button>
+      </div>
+      <div class="col-md-2">
+        <button id="next-btn" class="btn btn-primary"><i class="bi bi-skip-forward-btn"></i></button>
+      </div>
+    </div>
+  </div>
+
+<div class="modal fade" id="request" tabindex="-1" role="dialog" aria-labelledby="requestModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="requestModalLabel">Peça sua música</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="name">Nome:</label>
+            <input type="text" class="form-control" id="name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="song">Nome da música:</label>
+            <input type="text" class="form-control" id="song">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Enviar</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="fim">
+    <p>&copy; 2024 Escuta aí! - Todos os direitos reservados.</p>
+    <i class="bi bi-instagram"></i>
+    <i class="bi bi-linkedin"></i>
+    <i class="bi bi-twitter-x"></i>
+  </div>
+  
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js" defer></script>
+
+</body>
+</html>

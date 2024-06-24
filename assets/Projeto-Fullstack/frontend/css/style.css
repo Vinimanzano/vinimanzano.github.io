@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+a{
+    color: currentColor;
+}
+
+:root{
+    --poppins: 'Poppins', sans-serif;
+    --bck-linear: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    --white: #fff;
+    --whitesmoke: whitesmoke;
+    --black: black;
+    --color1: rgb(0, 17, 255);
+    --color2: rgb(245, 222, 16);  
+    --color3: rgb(228, 91, 12);
+    --color4: rgb(255, 0, 0);
+    --color5: rgb(155, 89, 155);
+    --color6: rgb(166, 121, 170);
+    --color7: rgba(0, 17, 255, 0.2);
+    --color8: rgba(0, 17, 255, 0.1);
+    --color9: rgba(0, 17, 255, 0.05);
+    --color10: rgba(0, 17, 255, 0.03);
+    --color11: rgba(180, 200, 35);
+    --Bakbak: "Bakbak One", sans-serif;
+    --gray: rgb(218, 209, 209);
+    --pink: linear-gradient(#834c4c, #7575ac);
+}
+
+body{
+    font-family: var(--poppins);
+    background: linear-gradient(#834c4c, #7575ac);
+    width: 99.1vw;
+    height: auto !important;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--gray);
+}
+
+header img{
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+}
+
+.btn-topo ul{
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    gap: 15px;
+}
+
+.btn-topo ul li{
+    list-style: none;
+    color: var(--black);
+    transition: 0.5s;
+}
+
+.btn-topo ul li:hover{
+    color: var(--whitesmoke);
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    height: 100vh;
+    width: 100%;
+}
+
+.card{
+    position: absolute;
+    top: 8%;
+    display: flex;
+    left: 15%;
+    height: 320px;
+    width: 550px;
+}
+
+main div p {
+    position: absolute;
+    font-size: 2rem;
+    color: var(--white);
+    top: -40%;   
+}
+
+.card p:hover {
+    transition: 0.5s;
+    color: var(--color3);
+  }
+
+.card:nth-child(1){
+    left: 55%;
+    top: 30%;
+}
+
+.card:nth-child(2){
+    top: 60%;
+}
+
+div img{
+    width: 100%;
+}
+
+div .legenda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 500px;
+    left: 720px;    
+}
+
+tbody tr td{
+    font-family: var(--Bakbak);
+    font-size: 1.8rem;
+    color: var(--black);
+    text-align: center;
+    border: 1px solid var(--black);
+}
+
+button {
+    font-size: 15px;
+    color: var(--black);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+  }
+  
+  button:focus,
+  button:hover {
+    color: var(--whitesmoke);
+  }
+  
+  button:focus:after,
+  button:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--white);
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+table tr th{
+    font-family: var(--Bakbak);
+    font-size: 1.8rem;
+    color: var(--black);
+    font-weight: 400;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--black);
+    color: var(--whitesmoke);
+    border-radius: 2px;
+}
+
+footer{
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color6);
+    gap: 20px;
+}
+
+footer div {
+    display: flex;
+    font-size: 1.6rem;
+    gap: 25px;   
+}
+
+footer i {
+    cursor: pointer;
+}
+
+footer i:hover{
+    color: var(--color3);
+    transition: 0.5s;
+}
+
+  .card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -5px;
+    margin: auto;
+    width: 200px;
+    height: 264px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100% );
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .card::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+  }
+  
+  .heading {
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 700;
+  }
+  
+  .card:hover::after {
+    filter: blur(30px);
+  }
+  
+  .card:hover::before {
+    transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+  }

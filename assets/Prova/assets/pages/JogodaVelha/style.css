@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --ff: 'Kanit', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;    
+    align-items: center;
+    justify-content: center;
+}
+
+body > div{
+    flex-direction: column;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.start{
+    cursor: pointer;
+    color: white;
+    font-size: 3rem;
+    animation: scale 1.9s infinite ease-in-out;
+    text-shadow: 2px 2px 10px rgba(60, 15, 223, 0.8), -2px -2px 10px rgba(209, 25, 19, 0.767);
+    font-family: var(--ff);
+}
+
+.time{
+    color: white;
+    font-size: 6rem;
+    text-shadow: 2px 2px 10px rgba(60, 15, 223, 0.8), -2px -2px 10px rgba(209, 25, 19, 0.767);
+    font-family: var(--ff);
+}
+
+.gamename{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    font-size: 3rem;
+}
+
+
+.p1{
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    color: yellow;
+    font-size: 2.3rem;
+    animation: scale 1.9s infinite ease-in-out;
+}
+
+.p2{
+    justify-content: center;
+    align-items: center;
+    font-family: var(--ff);
+    color: blue;
+    font-size: 2.3rem;
+    animation: scale 1.9s infinite ease-in-out;
+}
+
+.container{
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3,175px);
+    grid-template-rows: repeat(3,175px);
+    gap: 3px;
+    justify-content: center;
+    align-content: center;
+}
+
+.div-container{
+    background-color: rgb(30, 30, 30);
+    transition: .3s;
+    border-radius: 6%;
+    color: white;
+    font-size: 5rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.div-container:hover{
+    background-color: rgb(20, 20, 20);
+    transform: scale(1.06);
+    cursor: pointer;
+}
+
+.div-container:active{
+    background-color: rgb(10, 10, 10);
+}
+
+.rodape{
+    color: white;
+    text-align: right;
+    justify-content: center;
+    padding-top: 2%;
+    font-size: 0.8rem;
+}
+
+@keyframes scale{
+    0%{
+        transform: scale(1);
+    }50%{
+        transform: scale(1.2);
+    }100%{
+        transform: scale(1);
+    }
+}
+
