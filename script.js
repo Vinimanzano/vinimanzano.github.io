@@ -5,11 +5,12 @@ function getCurrentYear() {
 
 function updateCopyright() {
     var year = getCurrentYear();
-    var copyrightText = "Copyright © " + year + " by Vinícius Manzano | All Rights Reserved.";
-    document.getElementById("copyright").innerHTML = copyrightText;
+    var isPt = (document.documentElement.lang || '').toLowerCase().indexOf('pt') === 0;
+    var copyrightText = isPt
+        ? "Copyright © " + year + " Vinícius Manzano | Todos os direitos reservados."
+        : "Copyright © " + year + " by Vinícius Manzano | All Rights Reserved.";
+    var el = document.getElementById("copyright");
+    if (el) el.textContent = copyrightText;
 }
 
-window.onload = function() {
-    updateCopyright();
-};
-
+window.addEventListener('load', updateCopyright);

@@ -1,224 +1,274 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinícius Manzano — Programador e Técnico de Informática</title>
+    <meta name="description" content="Portfólio de Vinícius Manzano, programador e técnico de informática em Portugal. Projetos web em produção (Node.js, PostgreSQL, Supabase, Flutter) e competências em suporte técnico e manutenção de hardware.">
+    <link rel="canonical" href="https://vinimanzano.github.io/">
+    <link rel="alternate" hreflang="pt-PT" href="https://vinimanzano.github.io/">
+    <link rel="alternate" hreflang="en" href="https://vinimanzano.github.io/en/">
+    <link rel="alternate" hreflang="x-default" href="https://vinimanzano.github.io/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vinícius Manzano — Programador e Técnico de Informática">
+    <meta property="og:description" content="Projetos web em produção, competências em desenvolvimento e suporte técnico. Disponível para oportunidades em Portugal.">
+    <meta property="og:image" content="https://vinimanzano.github.io/assets/logo2.png">
+    <meta property="og:image:alt" content="Logótipo de Vinícius Manzano">
+    <meta property="og:url" content="https://vinimanzano.github.io/">
+    <meta property="og:locale" content="pt_PT">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Vinícius Manzano — Programador e Técnico de Informática">
+    <meta name="twitter:description" content="Projetos web em produção, competências em desenvolvimento e suporte técnico.">
+    <meta name="twitter:image" content="https://vinimanzano.github.io/assets/logo2.png">
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./assets/logo2.png" type="image/x-icon">
-    <script src="script.js" defer ></script>
-    <title>Portfólio</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <nav class="lang-switch" aria-label="Idioma">
+        <a href="index.html" lang="pt-PT" aria-current="page">PT</a>
+        <span aria-hidden="true">|</span>
+        <a href="en/index.html" lang="en" hreflang="en" title="English version">EN</a>
+    </nav>
+
     <header>
-        <ul>
-            <img src="./assets/logo2.png">
-            <li class="home"><a href="#home"><i class="bi bi-house"></i></a></li>
-            <li><a href="#about"><i class="bi bi-person-badge-fill"></i></a></li>
-            <li><a href="#skills"><i class="bi bi-person-gear"></i></a></li>
-            <li><a href="#projects"><i class="bi bi-code-slash"></i></a></li>
-            <li><a href="contact.html" title="Contact"><i class="bi bi-envelope"></i></a></li>
-        </ul>
+        <div class="header-main">
+            <img src="./assets/logo2.png" alt="Logótipo de Vinícius Manzano">
+            <nav aria-label="Navegação principal">
+                <ul>
+                    <li class="home"><a href="#home" aria-label="Início" title="Início"><i class="bi bi-house" aria-hidden="true"></i></a></li>
+                    <li><a href="#about" aria-label="Sobre mim" title="Sobre mim"><i class="bi bi-person-badge-fill" aria-hidden="true"></i></a></li>
+                    <li><a href="#skills" aria-label="Competências" title="Competências"><i class="bi bi-person-gear" aria-hidden="true"></i></a></li>
+                    <li><a href="#projects" aria-label="Projetos" title="Projetos"><i class="bi bi-code-slash" aria-hidden="true"></i></a></li>
+                    <li><a href="contact.html" aria-label="Contacto" title="Contacto"><i class="bi bi-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+            </nav>
+        </div>
 
         <ul>
-            <li><a href="https://github.com/vinimanzano" target="_blank"><i class="bi bi-github"></i></a></li>
-            <li class="refresh"><a href="#home"><i class="bi bi-arrow-clockwise"></i></a></li>
+            <li><a href="https://github.com/Vinimanzano" target="_blank" rel="noopener" aria-label="GitHub (abre num novo separador)" title="GitHub"><i class="bi bi-github" aria-hidden="true"></i></a></li>
+            <li class="refresh"><a href="#home" aria-label="Voltar ao topo" title="Voltar ao topo"><i class="bi bi-arrow-up" aria-hidden="true"></i></a></li>
         </ul>
     </header>
 
-  <div>
-        <main>
-          <div class="loader-start"></div>
-
-          <section id="home" class="home-section"> 
-            <p>Hello, my name is</p>           
-            <h2>Vinícius Manzano</h2>
-            <div>
-              <p>Welcome to my Portfólio</p>
-            </div>
-            <div class="arrow-down"><a href="#about"><i class="bi bi-arrow-down-short"></i></a></div>
-          </section>
-            
-          <section id="about" class="about">
-    <h2>about me</h2>
     <div>
-        <p>
-Systems Analysis and Development graduate who builds and ships real websites and web apps — from e-commerce stores to full-stack systems with authentication and databases. I turn ideas into products that actually go live.    </div>
-    <div class="loader"></div>
-</section>
-
-          <section id="skills" class="skills">        
-            <h2>Skills</h2>
-              <div class="div-skills">
-                <div class="mySkills">
-                    <p>DEVELOPMENT SKILLS</p>
-                      <ul>
-                        <li>
-                          <h3>HTML</h3>
-                          <span class="barras"><span class="html"></span></span>
-                        </li>
-                        <li>
-                          <h3>CSS</h3>
-                          <span class="barras"><span class="css"></span></span>
-                        </li>
-                        <li>
-                          <h3>JAVASCRIPT</h3>
-                          <span class="barras"><span class="js"></span></span>
-                        </li>
-                        <li>
-                          <h3>C#</h3>
-                          <span class="barras"><span class="c"></span></span>
-                        </li>
-                        <li>
-                          <h3>NodeJS</h3>
-                          <span class="barras"><span class="node"></span></span>
-                        </li>
-                        <li>
-                          <h3>Database</h3>
-                          <span class="barras"><span class="bd"></span></span>
-                        </li>
-                        <li>
-                          <h3>React</h3>
-                          <span class="barras"><span class="react"></span></span>
-                        </li>
-                          <li>
-                          <h3>Flutter</h3>
-                          <span class="barras"><span class="Flutter"></span></span>
-                        </li>
-                      </ul>
-                </div>
-                <div class="mySkills">
-                  <p>OTHER SKILLS</p>
-                    <ul>
-                      <li>
-                        <h3>EXCEL</h3>
-                        <span class="barras"><span class="excel"></span></span>
-                      </li>
-                      <li>
-                        <h3>POWER BI</h3>
-                        <span class="barras"><span class="power-bi"></span></span>
-                      </li>
-                      <li>
-                        <h3>GOOGLE CLOUD</h3>
-                        <span class="barras"><span class="gc"></span></span>
-                      </li>
-                    </ul>
-                </div>
-              </div>
-              <div class="loader"></div>
+        <main>
+          <section id="home" class="home-section">
+            <p>Olá, o meu nome é</p>
+            <h1>Vinícius Manzano</h1>
+            <p class="hero-role">Programador e Técnico de Informática</p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn-primary"><i class="bi bi-code-slash" aria-hidden="true"></i> Ver projetos</a>
+              <a href="./assets/Curriculum/curriculum%20Vinicius%20Manzano.pdf" class="btn-ghost" target="_blank" rel="noopener" download><i class="bi bi-file-earmark-arrow-down" aria-hidden="true"></i> Descarregar CV</a>
+              <a href="contact.html" class="btn-ghost"><i class="bi bi-envelope" aria-hidden="true"></i> Contactar</a>
+              <!-- LinkedIn: adicionar URL
+              <a href="https://www.linkedin.com/in/ADICIONAR-URL" class="btn-ghost" target="_blank" rel="noopener"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a>
+              -->
+            </div>
+            <div class="arrow-down"><a href="#about" aria-label="Ir para Sobre mim"><i class="bi bi-arrow-down-short" aria-hidden="true"></i></a></div>
           </section>
-        <div class="scroll-container">
+
+          <section id="about" class="about">
+            <h2>Sobre mim</h2>
+            <div>
+              <p>Formado em Análise e Desenvolvimento de Sistemas (SENAI), vivo em Portugal há 8 anos. Desenvolvo e publico sites e aplicações web reais — de lojas online a sistemas full-stack com autenticação e bases de dados — e trato também da parte técnica: manutenção e reparação de hardware, instalação e configuração de Windows e Office, redes básicas e apoio ao utilizador. Procuro uma oportunidade como Técnico de Informática.</p>
+            </div>
+          </section>
+
+          <section id="skills" class="skills">
+            <h2>Competências</h2>
+            <div class="div-skills">
+              <div class="mySkills">
+                <p class="skills-title"><i class="bi bi-code-square" aria-hidden="true"></i> Desenvolvimento</p>
+                <ul class="skill-list">
+                  <li>JavaScript / TypeScript</li>
+                  <li>Node.js (Express)</li>
+                  <li>React / Next.js</li>
+                  <li>Flutter / Dart</li>
+                  <li>SQL — PostgreSQL e MySQL</li>
+                  <li>Supabase</li>
+                  <li>Git e GitHub</li>
+                  <li>HTML e CSS</li>
+                </ul>
+              </div>
+              <div class="mySkills">
+                <p class="skills-title"><i class="bi bi-pc-display" aria-hidden="true"></i> Suporte técnico / Informática</p>
+                <ul class="skill-list">
+                  <li>Manutenção e reparação de hardware</li>
+                  <li>Instalação e configuração de Windows</li>
+                  <li>Instalação e configuração do Microsoft Office</li>
+                  <li>Redes básicas</li>
+                  <li>Apoio ao utilizador</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <div class="scroll-container">
           <section id="projects" class="projects">
-            <h2>Projects</h2>
-            <p class="projects-lead">Selected work — real products currently live in production.</p>
+            <h2>Projetos</h2>
+            <p class="projects-lead">Trabalho selecionado — alguns projetos estão em produção, outros em beta, foram vendidos a clientes ou são académicos.</p>
 
             <div class="projects-featured">
-              <a href="https://nupcya.com/" target="_blank" rel="noopener" class="project-card">
+              <a href="https://voiceclub.eu/" target="_blank" rel="noopener" class="project-card">
                 <div class="project-card-top">
-                  <span class="project-tag">E-commerce</span>
-                  <i class="bi bi-box-arrow-up-right"></i>
+                  <div class="project-badges">
+                    <span class="project-status project-status--live">Em produção</span>
+                    <span class="project-tag">Tempo real · Desktop</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </div>
-                <h3>Nupcya</h3>
-                <p>Online wedding store with a full catalog, multi-country checkout and order tracking. Built on Shopify with custom theming.</p>
-                <div class="project-tech"><span>Shopify</span><span>Liquid</span><span>HTML/CSS</span><span>JS</span></div>
-              </a>
-
-              <a href="https://arqsteelprojects.eu/" target="_blank" rel="noopener" class="project-card">
-                <div class="project-card-top">
-                  <span class="project-tag">Institutional</span>
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </div>
-                <h3>Arq Steel Projects</h3>
-                <p>Multilingual (PT/EN/ES) one-page site for a steel-structures company, with an animated project carousel and contact form.</p>
-                <div class="project-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>i18n</span></div>
+                <h3>VoiceClub</h3>
+                <p>Plataforma de voz e transmissão de ecrã para jogar com amigos. Comunidade de cerca de 670 membros, com transmissões ao vivo 24/7. Funciona no navegador e como aplicação para PC.</p>
+                <div class="project-tech"><span>Node.js</span><span>WebSocket</span><span>WebRTC P2P</span><span>Supabase</span><span>Electron</span></div>
+                <span class="project-url">voiceclub.eu</span>
               </a>
 
               <a href="https://idealsteelworkforce.com/" target="_blank" rel="noopener" class="project-card">
                 <div class="project-card-top">
-                  <span class="project-tag">Full-stack app</span>
-                  <i class="bi bi-box-arrow-up-right"></i>
+                  <div class="project-badges">
+                    <span class="project-status project-status--live">Em produção</span>
+                    <span class="project-tag">Full-stack</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </div>
                 <h3>Ideal Steel Workforce</h3>
-                <p>Web system for workforce management with user login, file uploads and a PostgreSQL database. Node.js back end and REST API.</p>
+                <p>Sistema web em produção para gestão dos funcionários de uma empresa de estruturas metálicas: registo de ponto, recibos de vencimento, prémios e candidaturas.</p>
                 <div class="project-tech"><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>JWT</span></div>
+                <span class="project-url">idealsteelworkforce.com</span>
+              </a>
+
+              <a href="https://arqsteelprojects.eu/" target="_blank" rel="noopener" class="project-card">
+                <div class="project-card-top">
+                  <div class="project-badges">
+                    <span class="project-status project-status--live">Em produção</span>
+                    <span class="project-tag">Institucional · PWA</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </div>
+                <h3>Arq Steel Projects</h3>
+                <p>Site institucional multilíngue (PT/EN/ES) de uma empresa de estruturas metálicas em Braga, mais uma ferramenta de registo de horas por obra (PWA) com exportação para Excel e PDF.</p>
+                <div class="project-tech"><span>HTML/CSS</span><span>JavaScript</span><span>PWA</span><span>Supabase</span></div>
+                <span class="project-url">arqsteelprojects.eu</span>
               </a>
 
               <div class="project-card project-card--private">
                 <div class="project-card-top">
-                  <span class="project-tag">Mobile · Health</span>
-                  <i class="bi bi-lock-fill" title="Private source code"></i>
+                  <div class="project-badges">
+                    <span class="project-status project-status--sold">Vendido a cliente</span>
+                    <span class="project-tag">Sistema de gestão</span>
+                  </div>
+                  <i class="bi bi-shop" aria-hidden="true"></i>
                 </div>
-                <h3>Onco Assist</h3>
-                <p>Cross-platform app for oncology patients and nurses: color-coded symptom triage (green/yellow/red), patient–nurse chat, FAQ, and exam scheduling shown on the patient's dashboard.</p>
-                <div class="project-tech"><span>Flutter</span><span>Dart</span><span>Node.js</span><span>REST API</span></div>
-                <a class="project-contact" href="mailto:contato.vinimanzano@gmail.com?subject=Onco%20Assist%20—%20interested%20in%20knowing%20more">
-                  <i class="bi bi-envelope"></i> Private project — get in touch
-                </a>
+                <h3>Sistema PDV</h3>
+                <p>Sistema de caixa, stock e segurança desenvolvido e vendido a uma distribuidora de bebidas no Brasil.</p>
+                <div class="project-tech"><span>Ponto de venda</span><span>Gestão de stock</span><span>Segurança</span></div>
               </div>
 
-              <div class="project-card project-card--private">
+              <a href="https://itsalexadiary.vercel.app/" target="_blank" rel="noopener" class="project-card">
                 <div class="project-card-top">
-                  <span class="project-tag">Full-stack · Gov</span>
-                  <i class="bi bi-lock-fill" title="Private source code"></i>
+                  <div class="project-badges">
+                    <span class="project-status project-status--live">Em produção</span>
+                    <span class="project-tag">Media kit</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </div>
-                <h3 class="project-title-logo"><img src="./assets/logos/sisur-white.png" alt="SISUR logo" class="project-logo"> SISUR — Sistema Urbano</h3>
-                <p>Platform that helps a city council handle urban problems. Citizens report issues by neighborhood; staff and an admin manage them through a dedicated panel. Includes auth, password recovery, and full occurrence management on web and mobile.</p>
-                <div class="project-tech"><span>JavaScript</span><span>Prisma</span><span>MySQL</span><span>Sass</span><span>Flutter</span></div>
-                <a class="project-contact" href="mailto:contato.vinimanzano@gmail.com?subject=SISUR%20—%20interested%20in%20knowing%20more">
-                  <i class="bi bi-envelope"></i> Private project — get in touch
-                </a>
-              </div>
-              <a href="https://voiceclub.eu/" target="_blank" rel="noopener" class="project-card">
-                <div class="project-card-top">
-                  <span class="project-tag">Real-time · Desktop</span>
-                  <i class="bi bi-box-arrow-up-right"></i>
-                </div>
-                <h3>VoiceClub</h3>
-                <p>Private Discord-style platform for watching friends' matches live. Servers and channels, voice chat with audio/video device selection, screen sharing, custom roles with role-restricted rooms and member limits, moderation tools, link filtering and invite-only access. Runs in the browser and as an installable desktop app.</p>
-                <div class="project-tech"><span>WebRTC</span><span>Supabase</span><span>Cloudflare TURN</span><span>Render</span><span>Desktop app</span></div>
+                <h3>Media kit Alexa's Diary</h3>
+                <p>Site para uma criadora de conteúdo, com as estatísticas das redes sociais atualizadas em tempo real.</p>
+                <div class="project-tech"><span>Supabase</span><span>API do TikTok</span><span>JavaScript</span></div>
+                <span class="project-url">itsalexadiary.vercel.app</span>
               </a>
+
               <a href="https://glamup-look-day.vercel.app/" target="_blank" rel="noopener" class="project-card">
                 <div class="project-card-top">
-                  <span class="project-tag">Web app · Fashion</span>
-                  <i class="bi bi-box-arrow-up-right"></i>
+                  <div class="project-badges">
+                    <span class="project-status project-status--beta">Beta</span>
+                    <span class="project-tag">App web · Moda</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
                 </div>
                 <h3>GlamUp</h3>
-                <p>Your look of the day, built from what's already in your wardrobe. Outfit suggestions by body type and occasion, makeup ideas for each event, and a daily reminder notification. Mobile-first installable web app (PWA) with email login.</p>
-                <div class="project-tech"><span>Next.js</span><span>Supabase</span><span>PWA</span><span>Vercel</span></div>
+                <p>Aplicação web (PWA) que sugere looks e maquilhagem de acordo com o biotipo e a ocasião. A análise da selfie é feita no próprio aparelho.</p>
+                <div class="project-tech"><span>Next.js</span><span>Supabase</span><span>PWA</span></div>
+                <span class="project-url">glamup-look-day.vercel.app</span>
               </a>
+
+              <a href="https://nupcya.com/" target="_blank" rel="noopener" class="project-card">
+                <div class="project-card-top">
+                  <div class="project-badges">
+                    <span class="project-status project-status--live">Em produção</span>
+                    <span class="project-tag">E-commerce</span>
+                  </div>
+                  <i class="bi bi-box-arrow-up-right" aria-hidden="true"></i>
+                </div>
+                <h3>Nupcya</h3>
+                <p>Loja online de artigos de casamento com catálogo completo, checkout para vários países e acompanhamento de encomendas. Feita em Shopify com tema personalizado.</p>
+                <div class="project-tech"><span>Shopify</span><span>Liquid</span><span>HTML/CSS</span><span>JS</span></div>
+                <span class="project-url">nupcya.com</span>
+              </a>
+
+              <div class="project-card project-card--private">
+                <div class="project-card-top">
+                  <div class="project-badges">
+                    <span class="project-status project-status--academic">Académico</span>
+                    <span class="project-tag">Full-stack · Autarquias</span>
+                  </div>
+                  <i class="bi bi-lock-fill" title="Repositório privado" aria-label="Repositório privado"></i>
+                </div>
+                <h3 class="project-title-logo"><img src="./assets/logos/sisur-white.png" alt="" class="project-logo"> SISUR — Sistema Urbano</h3>
+                <p>Projeto final do SENAI, desenvolvido em dupla: gestão de ocorrências urbanas para câmaras municipais. Os cidadãos reportam problemas por bairro e a equipa da câmara gere-os num painel próprio, na web e no telemóvel.</p>
+                <div class="project-tech"><span>Express</span><span>Prisma</span><span>MySQL</span><span>Flutter</span></div>
+                <a class="project-contact" href="mailto:contato.vinimanzano@gmail.com?subject=SISUR%20%E2%80%94%20pedido%20de%20informa%C3%A7%C3%B5es">
+                  <i class="bi bi-envelope" aria-hidden="true"></i> Repositório privado — contacte-me
+                </a>
+              </div>
+
+              <div class="project-card project-card--private">
+                <div class="project-card-top">
+                  <div class="project-badges">
+                    <span class="project-status project-status--academic">Académico</span>
+                    <span class="project-tag">Mobile · Saúde</span>
+                  </div>
+                  <i class="bi bi-lock-fill" title="Repositório privado" aria-label="Repositório privado"></i>
+                </div>
+                <h3>Onco Assist</h3>
+                <p>Aplicação de acompanhamento de doentes oncológicos, desenvolvida para um projeto académico, com triagem de sintomas por cores (verde/amarelo/vermelho) e chat com enfermeiros.</p>
+                <div class="project-tech"><span>Flutter</span><span>Node.js</span><span>Prisma</span><span>MySQL</span></div>
+                <a class="project-contact" href="mailto:contato.vinimanzano@gmail.com?subject=Onco%20Assist%20%E2%80%94%20pedido%20de%20informa%C3%A7%C3%B5es">
+                  <i class="bi bi-envelope" aria-hidden="true"></i> Repositório privado — contacte-me
+                </a>
+              </div>
             </div>
 
-            <h3 class="projects-subhead">Academic &amp; practice projects</h3>
+            <h3 class="projects-subhead">Projetos académicos e de prática</h3>
             <div class="projects-mini">
-              <a href="./assets/Projeto-Fullstack/frontend/html/index.html" target="_blank" rel="noopener">
-                <i class="bi bi-stack"></i><span>Full-stack Project</span>
-              </a>
               <a href="./assets/Loja-Senai/Loja/app/index.html" target="_blank" rel="noopener">
-                <i class="bi bi-cart3"></i><span>Online Store (SENAI)</span>
+                <i class="bi bi-cart3" aria-hidden="true"></i><span>Loja online (SENAI)</span>
               </a>
               <a href="./assets/Instituto/index.html" target="_blank" rel="noopener">
-                <i class="bi bi-building"></i><span>Institute Website</span>
+                <i class="bi bi-building" aria-hidden="true"></i><span>Site de instituto</span>
               </a>
               <a href="./assets/Genius/index.html" target="_blank" rel="noopener">
-                <i class="bi bi-controller"></i><span>Genius Game</span>
-              </a>
-              <a href="./assets/Curriculum/curriculum Vinicius Manzano.pdf" target="_blank" rel="noopener">
-                <i class="bi bi-file-earmark-person"></i><span>Résumé (PDF)</span>
+                <i class="bi bi-controller" aria-hidden="true"></i><span>Jogo Genius</span>
               </a>
             </div>
           </section>
-        </div>
+          </div>
 
           <section id="contact" class="contact-cta">
-            <h2>Let's work together</h2>
-            <p>Have a project in mind or want to know more about my work? Send me a message.</p>
-            <a href="contact.html" class="btn-primary"><i class="bi bi-send"></i> Get in touch</a>
+            <h2>Vamos falar?</h2>
+            <p>Tem uma vaga, um projeto ou quer saber mais sobre o meu trabalho? Envie-me uma mensagem.</p>
+            <a href="contact.html" class="btn-primary"><i class="bi bi-send" aria-hidden="true"></i> Contactar</a>
           </section>
         </main>
-        
-        <footer> 
+
+        <footer>
           <p id="copyright"></p>
         </footer>
-  </div>    
+    </div>
 </body>
 </html>
