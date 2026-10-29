@@ -3,6 +3,22 @@ const form = document.getElementById('contact-form');
 const statusBox = document.getElementById('form-status');
 const submitBtn = document.getElementById('form-submit');
 const EMAIL = 'contato.vinimanzano@gmail.com';
+const IS_PT = (document.documentElement.lang || '').toLowerCase().indexOf('pt') === 0;
+const T = IS_PT ? {
+    sending: 'A enviar...',
+    send: 'Enviar mensagem',
+    ok: 'Obrigado! A sua mensagem foi enviada — responderei em breve.',
+    err: 'Não foi possível enviar a mensagem. ',
+    fallback: 'Envie-a por email',
+    subject: 'Portfólio'
+} : {
+    sending: 'Sending...',
+    send: 'Send message',
+    ok: 'Thanks! Your message was sent — I\'ll get back to you soon.',
+    err: 'The message could not be sent. ',
+    fallback: 'Send it by email instead',
+    subject: 'Portfolio'
+};
 
 function showStatus(type, html) {
     statusBox.className = 'form-status ' + type;
@@ -15,11 +31,11 @@ form.addEventListener('submit', async (e) => {
     const data = new FormData(form);
     if (data.get('_honey')) return; // bot
 
-    data.set('_subject', 'Portfolio — ' + data.get('topic') + ' — ' + data.get('name'));
+    data.set('_subject', T.subject + ' — ' + data.get('topic') + ' — ' + data.get('name'));
     data.set('_replyto', data.get('email'));
 
     submitBtn.disabled = true;
-    submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> Sending...';
+    submitBtn.innerHTML = '<i class="bi bi-hourglass-split"></i> ' + T.sending;
 
     try {
         const res = await fetch('https://formsubmit.co/ajax/' + EMAIL, {
@@ -34,15 +50,15 @@ form.addEventListener('submit', async (e) => {
         }
 
         form.reset();
-        showStatus('ok', '<i class="bi bi-check-circle"></i> Thanks! Your message was sent — I\'ll get back to you soon.');
+        showStatus('ok', '<i class="bi bi-check-circle"></i> ' + T.ok);
     } catch (err) {
         const mailto = 'mailto:' + EMAIL
-            + '?subject=' + encodeURIComponent('Portfolio — ' + data.get('topic'))
+            + '?subject=' + encodeURIComponent(T.subject + ' — ' + data.get('topic'))
             + '&body=' + encodeURIComponent(data.get('message') + '\n\n— ' + data.get('name') + ' (' + data.get('email') + ')');
-        showStatus('err', '<i class="bi bi-exclamation-triangle"></i> The message could not be sent. '
-            + '<a href="' + mailto + '" style="color:inherit;text-decoration:underline">Send it by email instead</a>.');
+        showStatus('err', '<i class="bi bi-exclamation-triangle"></i> ' + T.err
+            + '<a href="' + mailto + '" style="color:inherit;text-decoration:underline">' + T.fallback + '</a>.');
     } finally {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = '<i class="bi bi-send"></i> Send message';
+        submitBtn.innerHTML = '<i class="bi bi-send"></i> ' + T.send;
     }
 });
